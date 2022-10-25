@@ -1,0 +1,6 @@
+.footer {
+  background-color: gray;
+  min-height: 50px;
+  position: relative;
+  bottom: 0;
+}
