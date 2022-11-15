@@ -1,5 +1,9 @@
-<div>
+<div class="goods" [routerLink]="['/products/',product.id]">
+	<!-- <img class="img-goods" [src]="product.image" [alt]="product.name"> -->
+	<img class="img-goods" src="assets\images\HoneyPhoto\Мед 1.png">
 	<h4>{{product.name}}</h4>
-	<p>{{product.price}}</p>
-	<button>Купити</button>
+	<p>Ціна: {{product.price}} ₴</p>
+	<p *ngIf="product.amount > 0">Є в наявності</p>
+	<div><button (click)="onBuy($event,product)" class="button">Купити</button></div>
+
 </div>

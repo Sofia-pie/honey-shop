@@ -1,0 +1,36 @@
+.goods {
+  background-color: #e7e7e7;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 236px;
+  height: 360px;
+  align-items: center;
+}
+.goods h4 {
+  margin: 2px;
+}
+
+.goods p {
+  margin: 2px;
+}
+
+.goods img {
+  width: 210px;
+  height: 214px;
+  left: 171px;
+  top: calc(50% - 214px / 2 - 60px);
+  border-radius: 10px;
+}
+
+.button {
+  padding: 2px 10px;
+  background: #d9d9d9;
+  border-radius: 20px;
+  border: none;
+  color: #000000;
+  margin-bottom: 13px;
+  margin-top: 10px;
+}
