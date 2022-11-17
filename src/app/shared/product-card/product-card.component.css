@@ -1,6 +1,6 @@
 .goods {
   background-color: #e7e7e7;
-  padding: 10px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,10 +18,9 @@
 }
 
 .goods img {
-  width: 210px;
-  height: 214px;
-  left: 171px;
-  top: calc(50% - 214px / 2 - 60px);
+  margin: 10px;
+  height: 60%;
+
   border-radius: 10px;
 }
 
