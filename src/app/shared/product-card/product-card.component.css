@@ -34,3 +34,7 @@
   margin-bottom: 13px;
   margin-top: 10px;
 }
+
+.button:hover {
+  cursor: pointer;
+}

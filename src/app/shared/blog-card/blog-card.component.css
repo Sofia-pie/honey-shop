@@ -1,0 +1,16 @@
+.blog-container {
+  background-color: #e7e7e7;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 350px;
+  height: 400px;
+  align-items: center;
+}
+
+.blog-container img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,1 +1,6 @@
-<p>blog-card works!</p>
+<div class="blog-container" [routerLink]="['/blog/',blog.id]">
+	<!-- <img [src]="blog.image" [alt]="blog.name"> -->
+	<img src="assets\images\BlogPhoto\BlogPhoto1.png" alt="">
+	<h4>{{blog.name}}</h4>
+	<p>{{blog.description}}</p>
+</div>
