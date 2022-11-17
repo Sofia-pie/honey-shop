@@ -1,1 +1,10 @@
-<p>products works!</p>
+<div class="container">
+	<div class="side-panel">
+		<input type="text" class="filter" placeholder="Filter" (keyup)="filter($event)">
+	</div>
+	<div class="products">
+		<app-product-card *ngFor="let product of products  | search: searchValue" [product]='product'
+			(buyProduct)="addItemToCart($event)">
+		</app-product-card>
+	</div>
+</div>
