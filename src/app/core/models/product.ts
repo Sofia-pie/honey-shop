@@ -6,5 +6,5 @@ export interface Product {
   description?: string;
   additional?: string;
   amount: number;
-  isAvailable?: boolean;
+  category: string;
 }
