@@ -5,7 +5,7 @@ const showUserInfo = async (req, res, next) => {
   try {
     console.log(req.params.id);
     const user = await User.findById(req.params.id);
-    res.json({
+    res.status(200).json({
       user: {
         _id: user._id,
         name: user.name,

@@ -33,7 +33,7 @@ const loginUser = async (req, res, next) => {
       userId: user._id,
     };
     const jwtToken = jwt.sign(payload, config.TOKEN_KEY);
-    return res.json({ jwt_token: jwtToken });
+    return res.json({ jwt_token: jwtToken, _id: user._id });
   }
   return res.status(400).json({ message: 'Not authorized' });
 };

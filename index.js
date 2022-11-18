@@ -35,7 +35,7 @@ const cors = require('cors');
 app.use(cors());
 
 app.use('/api/auth', authRouter);
-app.use('/api/users', usersRouter);
+app.use('/api/user', usersRouter);
 
 const { PORT } = process.env;
 const port = process.env.PORT || PORT;
