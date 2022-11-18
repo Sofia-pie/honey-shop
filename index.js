@@ -32,7 +32,7 @@ app.use(
 );
 
 app.use('/auth', authRouter);
-app.use('/users', usersRouter);
+app.use('/user', usersRouter);
 
 const { PORT } = process.env;
 const port = process.env.PORT || PORT;

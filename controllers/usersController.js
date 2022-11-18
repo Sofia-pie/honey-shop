@@ -3,8 +3,8 @@ const { changePassword } = require('../services/usersService');
 
 const showUserInfo = async (req, res, next) => {
   try {
-    console.log(req.user.userId);
-    const user = await User.findById(req.user.userId);
+    console.log(req.params.id);
+    const user = await User.findById(req.params.id);
     res.json({
       user: {
         _id: user._id,

@@ -9,9 +9,9 @@ const {
   deleteUser,
 } = require('../controllers/usersController');
 
-router.get('/me', authMiddleware, showUserInfo);
-router.patch('/me', authMiddleware, changeUserPassword);
-router.delete('/me', authMiddleware, deleteUser);
+router.get('/:id', authMiddleware, showUserInfo);
+router.patch('/:id', authMiddleware, changeUserPassword);
+router.delete('/:id', authMiddleware, deleteUser);
 
 module.exports = {
   usersRouter: router,
