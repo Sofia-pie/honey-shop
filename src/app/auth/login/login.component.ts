@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import {
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  Validators,
+} from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../../core/services/auth.service';
 
@@ -16,8 +21,8 @@ export class LoginComponent implements OnInit {
     public router: Router
   ) {
     this.loginForm = this.fb.group({
-      email: [''],
-      password: [''],
+      email: new FormControl([''], [Validators.required, Validators.email]),
+      password: new FormControl([''], [Validators.required]),
     });
   }
 

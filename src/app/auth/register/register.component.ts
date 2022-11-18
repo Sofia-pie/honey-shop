@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import {
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  Validators,
+} from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../../core/services/auth.service';
 
@@ -16,10 +21,21 @@ export class RegisterComponent implements OnInit {
     public router: Router
   ) {
     this.signupForm = this.fb.group({
-      name: [''],
-      email: [''],
-      password: [''],
-      phone: [''],
+      name: new FormControl(
+        [''],
+        [Validators.required, Validators.minLength(3)]
+      ),
+      email: new FormControl([''], [Validators.required, Validators.email]),
+      password: new FormControl([''], [Validators.required]),
+      phone: new FormControl(
+        [''],
+        [
+          Validators.required,
+          Validators.minLength(10),
+          Validators.maxLength(11),
+          Validators.pattern(/^[+]?[0-9]+$/),
+        ]
+      ),
     });
   }
 
