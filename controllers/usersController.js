@@ -12,6 +12,7 @@ const showUserInfo = async (req, res, next) => {
         isAdmin: user.isAdmin,
         email: user.email,
         created_date: user.created_date,
+        phone: user.phone,
       },
     });
   } catch (err) {

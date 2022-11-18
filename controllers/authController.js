@@ -6,15 +6,17 @@ const { saveUser } = require('../services/authService');
 const config = process.env;
 
 const registerUser = async (req, res, next) => {
-  const { email, password, name } = req.body;
-  await userJoiSchema.validateAsync({ email, password, name }).catch((err) => {
-    return res.status(400).json({ message: err.message });
-  });
+  const { email, password, name, phone } = req.body;
+  await userJoiSchema
+    .validateAsync({ email, password, name, phone })
+    .catch((err) => {
+      return res.status(400).json({ message: err.message });
+    });
 
-  await saveUser({ email, password, name }).catch((err) => {
+  await saveUser({ email, password, name, phone }).catch((err) => {
     next(err);
   });
-  return await res.json({
+  return await res.status(201).json({
     message: 'Profile created successfully',
   });
 };
