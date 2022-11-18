@@ -8,6 +8,7 @@ const showUserInfo = async (req, res, next) => {
     res.json({
       user: {
         _id: user._id,
+        name: user.name,
         isAdmin: user.isAdmin,
         email: user.email,
         created_date: user.created_date,
