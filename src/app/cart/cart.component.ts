@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Product } from '../core/models/product';
+import { AuthService } from '../core/services/auth.service';
 import { CartService } from '../core/services/cart.service';
 
 @Component({
@@ -9,7 +11,17 @@ import { CartService } from '../core/services/cart.service';
 })
 export class CartComponent implements OnInit {
   items: Product[];
-  constructor(private cartService: CartService) {}
+  currentUser: Object = {};
+  constructor(
+    private cartService: CartService,
+    public authService: AuthService,
+    private route: ActivatedRoute
+  ) {
+    let id = this.route.snapshot.paramMap.get('id');
+    this.authService.getUserProfile(id).subscribe((res) => {
+      this.currentUser = res.user;
+    });
+  }
   ngOnInit(): void {}
 
   getItems() {

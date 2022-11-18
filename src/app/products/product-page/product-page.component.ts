@@ -13,7 +13,7 @@ import { ProductService } from '../../core/services/product.service';
 export class ProductPageComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
-    private router: Router,
+
     private productService: ProductService
   ) {}
 

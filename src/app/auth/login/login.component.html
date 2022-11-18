@@ -1,1 +1,29 @@
-<p>login works!</p>
+<main>
+	<form class="register-form-container" [formGroup]="loginForm" (ngSubmit)="loginUser()">
+		<h1 class="form-title">
+			Вхід
+		</h1>
+		<div class="form-fields">
+			<div class="form-field">
+				<label class="labels">Ел. пошта</label> <br>
+				<input class="form-inputs" type="text" formControlName="email" required>
+			</div>
+			<div class="form-field">
+				<label class="labels">Пароль</label> <br>
+				<input class="form-inputs" type="password" formControlName="password">
+			</div>
+		</div>
+		<!-- <div class="form-check-reminder">
+			<input type="checkbox"><label class="labels reg">Запам'ятати мене</label>
+			<a class="a-reminder labels reminder" href="">Нагадати пароль</a>
+		</div> -->
+		<div class="form-buttons">
+			<div class="button-enter">
+				<button class="button buttons" type="submit">Увійти</button>
+			</div>
+			<div class="button-reg-now">
+				<a class="a-reminder buttons now" [routerLink]="['/sign-up']">Зареєструватися</a>
+			</div>
+		</div>
+	</form>
+</main>

@@ -12,13 +12,13 @@ import { User } from '../models/user';
   providedIn: 'root',
 })
 export class AuthService {
-  url: string = 'http://localhost:8080/api/auth';
+  url: string = 'http://localhost:8080/api';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
   currentUser = {};
   constructor(private http: HttpClient, public router: Router) {}
   // Sign-up
   register(user: User): Observable<any> {
-    let api = `${this.url}/register`;
+    let api = `${this.url}/auth/register`;
     return this.http
       .post(api, user)
       .pipe(catchError(this.handleError))
@@ -27,12 +27,13 @@ export class AuthService {
   // Sign-in
   login(user: User) {
     return this.http
-      .post<any>(`${this.url}/login`, user)
+      .post<any>(`${this.url}/auth/login`, user)
       .subscribe((res: any) => {
-        localStorage.setItem('access_token', res.token);
+        localStorage.setItem('access_token', res.jwt_token);
+
         this.getUserProfile(res._id).subscribe((res) => {
           this.currentUser = res;
-          this.router.navigate(['user-profile/' + res.msg._id]);
+          this.router.navigate(['/main-page']);
         });
       });
   }
