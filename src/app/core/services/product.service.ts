@@ -7,14 +7,19 @@ import { Observable, pipe, tap } from 'rxjs';
   providedIn: 'root',
 })
 export class ProductService {
-  private apiUrl = ' http://localhost:3000/products';
+  headers = new HttpHeaders().set('Content-Type', 'application/json');
+  private apiUrl = ' http://localhost:8080/api/products';
 
   constructor(private http: HttpClient) {}
   getProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.apiUrl);
+    return this.http
+      .get<Product[]>(this.apiUrl)
+      .pipe(tap((p) => console.log(p)));
   }
 
   getProduct(id: number | string): Observable<Product> {
-    return this.http.get<Product>(`${this.apiUrl}/${id}`);
+    return this.http.get<Product>(`${this.apiUrl}/${id}`, {
+      headers: this.headers,
+    });
   }
 }
