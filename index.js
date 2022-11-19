@@ -24,6 +24,7 @@ app.use(morgan('tiny'));
 
 const { authRouter } = require('./routers/authRouter');
 const { usersRouter } = require('./routers/usersRouter');
+const { productsRouter } = require('./routers/productsRouter');
 
 app.use(
   morgan('common', {
@@ -36,6 +37,7 @@ app.use(cors());
 
 app.use('/api/auth', authRouter);
 app.use('/api/user', usersRouter);
+app.use('/api/products', productsRouter);
 
 const { PORT } = process.env;
 const port = process.env.PORT || PORT;
