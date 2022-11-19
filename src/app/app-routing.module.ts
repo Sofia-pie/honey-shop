@@ -22,11 +22,6 @@ const routes: Routes = [
   { path: 'log-in', component: LoginComponent },
   { path: 'sign-up', component: RegisterComponent },
   { path: 'cart', component: CartComponent, canActivate: [AuthGuard] },
-  {
-    path: 'user-profile/:id',
-    component: UserProfileComponent,
-    canActivate: [AuthGuard],
-  },
 
   { path: '', pathMatch: 'full', redirectTo: 'main-page' },
 ];

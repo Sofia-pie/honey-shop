@@ -26,15 +26,13 @@ export class ProductsComponent implements OnInit {
       .getProducts()
       .subscribe((products) => (this.products = products));
   }
+
   buy(event: any) {
-    console.log('Buy ' + event);
+    console.log(event);
+    this.cartService.addItem({ product: event, quantity: 1 });
   }
 
   filter(event: any) {
     this.searchValue = event.target.value;
-  }
-
-  addItemToCart(pr: Product) {
-    console.log(pr);
   }
 }

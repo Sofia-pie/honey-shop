@@ -58,7 +58,7 @@
 			</div>
 			<div class="goods-catalog">
 				<app-product-card *ngFor="let product of products  | search: searchValue" [product]='product'
-					(buyProduct)="addItemToCart($event)">
+					(buyProduct)="buy($event)">
 				</app-product-card>
 			</div>
 

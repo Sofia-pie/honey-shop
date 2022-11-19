@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { CartItem } from '../core/models/cart';
 import { Product } from '../core/models/product';
 import { AuthService } from '../core/services/auth.service';
 import { CartService } from '../core/services/cart.service';
@@ -10,21 +11,27 @@ import { CartService } from '../core/services/cart.service';
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent implements OnInit {
-  items: Product[];
-  currentUser: Object = {};
+  items: CartItem[];
+  currentUserId: string;
   constructor(
-    private cartService: CartService,
+    public cartService: CartService,
     public authService: AuthService,
     private route: ActivatedRoute
-  ) {
-    let id = this.route.snapshot.paramMap.get('id');
-    this.authService.getUserProfile(id).subscribe((res) => {
-      this.currentUser = res.user;
-    });
+  ) {}
+  ngOnInit(): void {
+    this.cartService.loadCart();
+    this.items = this.cartService.cartItems;
   }
-  ngOnInit(): void {}
 
-  getItems() {
-    this.items = this.cartService.getCart();
+  removeFromCart(item: CartItem) {
+    this.cartService.removeItem(item);
+  }
+
+  decrease(item: CartItem) {
+    item.quantity--;
+  }
+
+  add(item: CartItem) {
+    item.quantity++;
   }
 }

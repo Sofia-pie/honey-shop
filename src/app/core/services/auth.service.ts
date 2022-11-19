@@ -30,12 +30,14 @@ export class AuthService {
       .post<any>(`${this.url}/auth/login`, user)
       .subscribe((res: any) => {
         localStorage.setItem('access_token', res.jwt_token);
+        localStorage.setItem('userId', res._id);
 
-        this.getUserProfile(res._id).subscribe((res) => {
-          this.currentUser = res;
-          this.router.navigate(['/main-page']);
-        });
+        this.router.navigate(['/main-page']);
       });
+  }
+
+  getUserId() {
+    return localStorage.getItem('userId');
   }
   getToken() {
     return localStorage.getItem('access_token');
@@ -47,7 +49,8 @@ export class AuthService {
 
   logout() {
     let removeToken = localStorage.removeItem('access_token');
-    if (removeToken == null) {
+    let removeId = localStorage.removeItem('userId');
+    if (removeToken == null && removeId == null) {
       this.router.navigate(['log-in']);
     }
   }
