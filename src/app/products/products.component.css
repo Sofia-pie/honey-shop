@@ -51,10 +51,12 @@
 /* --- */
 
 .goods-catalog {
-  width: 1280px;
-  height: 1620px;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 490px;
+  padding-top: 60px;
+  gap: 30px;
+  max-width: 1280px;
 }
 
 .goods-1 {
