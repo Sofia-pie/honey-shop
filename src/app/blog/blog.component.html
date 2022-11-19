@@ -1,1 +1,10 @@
-<p>blog works!</p>
+<div class="img">
+	<img src="assets/images/Background/Background 1440 x 650.png">
+</div>
+<div class="wavepage">
+	<p><a [routerLink]="['/main-page']">Головна сторінка</a> > Блог</p>
+</div>
+<div class="blog-section">
+	<app-blog-card *ngFor="let blog of blogs$|async" [blog]="blog"></app-blog-card>
+
+</div>
