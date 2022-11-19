@@ -5,7 +5,9 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  max-width: 1440px;
+
+  max-width: 236px;
+  max-height: 360px;
 }
 .goods h4 {
   margin: 2px;
@@ -17,13 +19,14 @@
 
 .goods img {
   width: 100%;
-  height: auto;
+
   border-radius: 10px;
 }
 
 .img-goods {
   margin: 10px;
-  height: 55%;
+  width: 210px;
+  max-height: 214px;
 }
 .button {
   padding: 2px 10px;
