@@ -41,6 +41,16 @@ const editProduct = async (req, res, next) => {
     next(err);
   }
 };
+
+const deleteProduct = (req, res, next) => {
+  return Product.findByIdAndDelete(res.params.id)
+    .then(() => {
+      res.status(200).json('Deleted');
+    })
+    .catch((err) => {
+      next(err);
+    });
+};
 module.exports = {
   getProducts,
   addProduct,
