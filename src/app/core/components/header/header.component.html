@@ -12,9 +12,13 @@
 		<div class="header-item headerButton">
 			<a [routerLink]="['/blog']">Блог</a>
 		</div>
-		<div class="header-item headerButton">
+		<!-- <div class="header-item headerButton">
 			<a href="">Контакти</a>
+		</div> -->
+		<div class="header-item headerButton" *ngIf="this.authService.isLoggedIn && this.authService.isAdmin">
+			<a [routerLink]="['/dashboard']">Адмін-панель</a>
 		</div>
+
 	</div>
 	<div class="header-section">
 		<div class="header-item headerButton">
