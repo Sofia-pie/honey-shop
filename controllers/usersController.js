@@ -6,14 +6,12 @@ const showUserInfo = async (req, res, next) => {
     console.log(req.params.id);
     const user = await User.findById(req.params.id);
     res.status(200).json({
-      user: {
-        _id: user._id,
-        name: user.name,
-        isAdmin: user.isAdmin,
-        email: user.email,
-        created_date: user.created_date,
-        phone: user.phone,
-      },
+      _id: user._id,
+      name: user.name,
+      isAdmin: user.isAdmin,
+      email: user.email,
+      created_date: user.created_date,
+      phone: user.phone,
     });
   } catch (err) {
     next(err);

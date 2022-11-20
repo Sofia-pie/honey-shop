@@ -12,7 +12,6 @@ const { Schema } = mongoose;
 
 const productSchema = new Schema(
   {
-    id: Number,
     image: String,
     name: String,
     price: Number,
@@ -21,7 +20,7 @@ const productSchema = new Schema(
     amount: Number,
     category: String,
   },
-  { timestamps: { createdAt: 'created_date', updatedAt: false } }
+  { timestamps: { createdAt: true } }
 );
 
 const Product = mongoose.model('Product', productSchema);

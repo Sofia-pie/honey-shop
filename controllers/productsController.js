@@ -1,4 +1,4 @@
-const { Product } = require('../models/Product');
+const { Product, productJoiSchema } = require('../models/Product');
 const { saveProduct } = require('../services/productsService');
 
 const getProducts = async (req, res, next) => {
@@ -30,8 +30,20 @@ const getProduct = async (req, res, next) => {
       next(err);
     });
 };
+
+const editProduct = async (req, res, next) => {
+  const payload = req.body;
+  await productJoiSchema.validateAsync(payload);
+  try {
+    await Product.findByIdAndUpdate(req.params.id, payload);
+    return res.status(200).json('sucess');
+  } catch (err) {
+    next(err);
+  }
+};
 module.exports = {
   getProducts,
   addProduct,
   getProduct,
+  editProduct,
 };

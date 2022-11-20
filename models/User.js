@@ -37,7 +37,7 @@ const userchema = new Schema(
       required: true,
     },
   },
-  { timestamps: { createdAt: 'created_date', updatedAt: false } }
+  { timestamps: { createdAt: true, updatedAt: false } }
 );
 
 const User = mongoose.model('User', userchema);
