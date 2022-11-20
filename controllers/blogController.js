@@ -32,9 +32,9 @@ const editBlog = async (req, res, next) => {
 };
 
 const deleteBlog = (req, res, next) => {
-  return Blog.findByIdAndDelete(req.params.id).then(() =>
-    res.status(200).json('Deleted')
-  );
+  return Blog.findByIdAndDelete(req.params.id)
+    .then(() => res.status(200).json('Deleted'))
+    .catch((err) => next(err));
 };
 module.exports = {
   getBlogs,
