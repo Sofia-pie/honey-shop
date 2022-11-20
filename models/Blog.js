@@ -8,12 +8,11 @@ const { Schema } = mongoose;
 
 const blogSchema = new Schema(
   {
-    id: Number,
     name: String,
     description: String,
     text: String,
   },
-  { timestamps: { createdAt: 'created_date', updatedAt: false } }
+  { timestamps: { createdAt: true } }
 );
 
 const Blog = mongoose.model('Blog', blogSchema);

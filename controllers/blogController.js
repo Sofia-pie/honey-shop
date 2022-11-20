@@ -21,8 +21,18 @@ const getBlog = (req, res, next) => {
     .catch((err) => next(err));
 };
 
+const editBlog = async (req, res, next) => {
+  const payload = req.body;
+  try {
+    await Blog.findByIdAndUpdate(req.params.id, payload);
+    return res.status(200).json('sucess');
+  } catch (err) {
+    next(err);
+  }
+};
 module.exports = {
   getBlogs,
   addBlog,
   getBlog,
+  editBlog,
 };
