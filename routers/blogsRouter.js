@@ -3,6 +3,7 @@ const {
   getBlogs,
   addBlog,
   editBlog,
+  deleteBlog,
 } = require('../controllers/blogController');
 const { authMiddleware } = require('../middleware/authMiddleware');
 
@@ -12,6 +13,7 @@ router.get('/', getBlogs);
 router.post('/', authMiddleware, addBlog);
 router.get('/:id', addBlog);
 router.patch('/:id', authMiddleware, editBlog);
+router.delete('/:id', authMiddleware, deleteBlog);
 module.exports = {
   blogsRouter: router,
 };

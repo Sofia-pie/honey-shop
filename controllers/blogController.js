@@ -30,9 +30,16 @@ const editBlog = async (req, res, next) => {
     next(err);
   }
 };
+
+const deleteBlog = (req, res, next) => {
+  return Blog.findByIdAndDelete(req.params.id).then(() =>
+    res.status(200).json('Deleted')
+  );
+};
 module.exports = {
   getBlogs,
   addBlog,
   getBlog,
   editBlog,
+  deleteBlog,
 };
