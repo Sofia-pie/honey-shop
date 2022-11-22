@@ -1,0 +1,441 @@
+body {
+	margin: 0;
+}
+
+/* Секція селекторів навігації */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+}
+
+.header-item {
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.header-item:hover {
+    background-color: #FF9900;
+    border-radius: 4px;
+}
+
+.LogoS {
+    width: 117px;
+    height: 50px;
+}
+
+.basket {
+    width: 30px;
+    height: 30px;
+}
+
+/* Кінець секції селекторів навігації */
+
+.img img {
+    width: 1440px;
+    height: 480px;
+    margin-left: 240px;
+}
+
+.wavepage p {
+    width: 283px;
+    height: 19px;
+    margin-left: 380px;
+    color: gray;
+}
+
+/* Селектори блогу */
+
+.blog-section {
+    width: 1160px;
+    height: 2900px;
+    margin-left: 380px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-section a {
+    text-decoration: underline;
+}
+
+.blog-1 {
+    max-width: 560px;
+    max-height: 560px;
+    background-color: #D9D9D9;
+}
+
+.blog-1 img {
+    width: 560px;
+    height: 400px;
+}
+
+.blog-1-h2 {
+    padding-left: 10px;
+}
+
+.blog-1-p-info {
+    padding-left: 10px;
+    height: 48px;
+    width: 530px;
+}
+
+.blog-1-a {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    max-width: 560px;
+    max-height: 480px;
+    display: flex;
+    justify-content: right;
+}
+
+.blog-2 {
+    margin-left: 40px;
+    max-width: 560px;
+    max-height: 560px;
+    background-color: #D9D9D9;
+}
+
+.blog-2 img {
+    width: 560px;
+    height: 400px;
+}
+
+.blog-2-h2 {
+    padding-left: 10px;
+}
+
+.blog-2-p-info {
+    padding-left: 10px;
+    height: 48px;
+    width: 530px;
+}
+
+.blog-2-a {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    max-width: 560px;
+    max-height: 480px;
+    display: flex;
+    justify-content: right;
+}
+
+.blog-3 {
+    margin-top: 20px;
+    max-width: 560px;
+    max-height: 560px;
+    background-color: #D9D9D9;
+}
+
+.blog-3 img {
+    width: 560px;
+    height: 400px;
+}
+
+.blog-3-h2 {
+    padding-left: 10px;
+}
+
+.blog-3-p-info {
+    padding-left: 10px;
+    height: 48px;
+    width: 530px;
+}
+
+.blog-3-a {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    max-width: 560px;
+    max-height: 480px;
+    display: flex;
+    justify-content: right;
+}
+
+.blog-4 {
+    margin-top: 20px;
+    margin-left: 40px;
+    max-width: 560px;
+    max-height: 560px;
+    background-color: #D9D9D9;
+}
+
+.blog-4 img {
+    width: 560px;
+    height: 400px;
+}
+
+.blog-4-h2 {
+    padding-left: 10px;
+}
+
+.blog-4-p-info {
+    padding-left: 10px;
+    height: 48px;
+    width: 530px;
+}
+
+.blog-4-a {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    max-width: 560px;
+    max-height: 480px;
+    display: flex;
+    justify-content: right;
+}
+
+.blog-5 {
+    margin-top: 20px;
+    max-width: 560px;
+    max-height: 560px;
+    background-color: #D9D9D9;
+}
+
+.blog-5 img {
+    width: 560px;
+    height: 400px;
+}
+
+.blog-5-h2 {
+    padding-left: 10px;
+}
+
+.blog-5-p-info {
+    padding-left: 10px;
+    height: 48px;
+    width: 530px;
+}
+
+.blog-5-a {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    max-width: 560px;
+    max-height: 480px;
+    display: flex;
+    justify-content: right;
+}
+
+.blog-6 {
+    margin-top: 20px;
+    margin-left: 40px;
+    max-width: 560px;
+    max-height: 560px;
+    background-color: #D9D9D9;
+}
+
+.blog-6 img {
+    width: 560px;
+    height: 400px;
+}
+
+.blog-6-h2 {
+    padding-left: 10px;
+}
+
+.blog-6-p-info {
+    padding-left: 10px;
+    height: 48px;
+    width: 530px;
+}
+
+.blog-6-a {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    max-width: 560px;
+    max-height: 480px;
+    display: flex;
+    justify-content: right;
+}
+
+.blog-7 {
+    margin-top: 20px;
+    max-width: 560px;
+    max-height: 560px;
+    background-color: #D9D9D9;
+}
+
+.blog-7 img {
+    width: 560px;
+    height: 400px;
+}
+
+.blog-7-h2 {
+    padding-left: 10px;
+}
+
+.blog-7-p-info {
+    padding-left: 10px;
+    height: 48px;
+    width: 530px;
+}
+
+.blog-7-a {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    max-width: 560px;
+    max-height: 480px;
+    display: flex;
+    justify-content: right;
+}
+
+.blog-8 {
+    margin-top: 20px;
+    margin-left: 40px;
+    max-width: 560px;
+    max-height: 560px;
+    background-color: #D9D9D9;
+}
+
+.blog-8 img {
+    width: 560px;
+    height: 400px;
+}
+
+.blog-8-h2 {
+    padding-left: 10px;
+}
+
+.blog-8-p-info {
+    padding-left: 10px;
+    height: 48px;
+    width: 530px;
+}
+
+.blog-8-a {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    max-width: 560px;
+    max-height: 480px;
+    display: flex;
+    justify-content: right;
+}
+
+.blog-9 {
+    margin-top: 20px;
+    max-width: 560px;
+    max-height: 560px;
+    background-color: #D9D9D9;
+}
+
+.blog-9 img {
+    width: 560px;
+    height: 400px;
+}
+
+.blog-9-h2 {
+    padding-left: 10px;
+}
+
+.blog-9-p-info {
+    padding-left: 10px;
+    height: 48px;
+    width: 530px;
+}
+
+.blog-9-a {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    max-width: 560px;
+    max-height: 480px;
+    display: flex;
+    justify-content: right;
+}
+
+.blog-10 {
+    margin-top: 20px;
+    margin-left: 40px;
+    max-width: 560px;
+    max-height: 560px;
+    background-color: #D9D9D9;
+}
+
+.blog-10 img {
+    width: 560px;
+    height: 400px;
+}
+
+.blog-10-h2 {
+    padding-left: 10px;
+}
+
+.blog-10-p-info {
+    padding-left: 10px;
+    height: 48px;
+    width: 530px;
+}
+
+.blog-10-a {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    max-width: 560px;
+    max-height: 480px;
+    display: flex;
+    justify-content: right;
+}
+
+/* Кінець селекторів блогу */
+
+/* Селектори footer */
+
+.footer {
+    background-color: #d1d1d1;
+    min-height: 200px;
+    margin-top: 30px;
+  
+    display: flex;
+    padding: 35px;
+    justify-content: center;
+    gap: 40px;
+}
+  
+.logo-container {
+    height: 78px;
+  }
+.logo {
+    height: 100%;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    border-bottom: 0.5px solid #afafaf;
+}
+  
+.heading {
+    font-size: 700;
+    font-size: 24px;
+    position: relative;
+}
+  
+.heading::after {
+    position: absolute;
+    width: 34px;
+    height: 3px;
+    content: "";
+    background-color: #afafaf;
+    border-radius: 10px;
+    top: 29px;
+    left: 0;
+}
+  
+.info a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}  
+
+/* Кінець селекторів footer */
