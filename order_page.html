@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/order_page_style.css">
+    <title>Оформлення замовлення</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img class="LogoS" src="./images/Logo/LogoS.png" alt="LogoS">
+        </div>
+    </header>
+    <div class="content">
+        <h2>Оформлення замовлення</h2>
+        <h2>Контактні дані</h2>
+        <div class="form-contacts">
+            <div class="form-contacts-field">
+                <label class="labels">Ім'я</label> <br>
+                <input class="form-inputs" type="text">
+            </div>
+            <div class="form-contacts-field">
+                <label class="labels">Прізвище</label> <br>
+                <input class="form-inputs" type="text">
+            </div>
+            <div class="form-contacts-field">
+                <label class="labels">Телефон</label> <br>
+                <input class="form-inputs" type="text">
+            </div>
+        </div>
+        <h2>Доставка</h2>
+        <div class="form-delivery">
+            <div class="form-delivery-field">
+                <img class="nv-logo" src="./images/Photo/НП лого.png" alt="Лого НП">
+                <p class="p-1-delivery">Нова пошта</p>
+                <p class="p-2-delivery">від 60 ₴</p>
+            </div>
+            <div class="form-delivery-field">
+                <input type="checkbox" name="v-1-delivery">
+                <label for="v-1-delivery">У відділення</label>
+            </div>
+            <div class="form-delivery-field">
+                <input type="checkbox" name="v-2-delivery">
+                <label for="v-2-delivery">У поштомат</label>
+            </div>
+            <div class="form-delivery-field">
+                <input type="checkbox" name="v-3-delivery">
+                <label for="v-3-delivery">Кур'єром</label>
+            </div>
+            <div class="form-delivery-field">
+                <p>Місто</p>
+                <select class="select-delivery" name="city-list">
+                    <option value="">Вкажіть місто</option>
+                    <option value="1">м. Київ</option>
+                    <option value="2">м. Ужгород</option>
+                    <option value="3">м. Житомир</option>
+                    <option value="4">м. Львів</option>
+                </select>
+                <p>Відділення</p>
+                <select class="select-delivery" name="city-list">
+                    <option value="">Вкажіть відділення доставки</option>
+                    <option value="1">м. Київ, вул. Привокзальна, 12 - Нова пошта №30</option>
+                    <option value="2">м. Ужгород, вул. Заньковецької, 48а - Нова пошта №10</option>
+                    <option value="3">м. Житомир, вул. Шевченка, 18а - Нова пошта №18</option>
+                    <option value="4">м. Львів, вул. Городоцька, 359 - Нова пошта №1</option>
+                </select>
+            </div>
+        </div>
+        <h2>Оплата</h2>
+        <div class="form-payment">
+            <div class="form-payment-field">
+                <input type="checkbox" name="v-1-payment">
+                <label for="v-1-payment">Післяплата "Нова Пошта"</label>
+            </div>
+            <div class="form-payment-field">
+                <input type="checkbox" name="v-2-payment">
+                <label for="v-2-payment">Оплата за реквізитами</label>
+            </div>
+            <div class="form-payment-field">
+                <input type="checkbox" name="v-3-payment">
+                <label for="v-3-payment">Післяплата</label>
+            </div>
+        </div>
+        <h3>Ваш коментар до замовлення</h3>
+        <input class="text-area-comment" type="text-area">
+        <div class="basket-form">
+            <p class="p1-payment">Ваше замовлення</p>
+            <p class="p2-payment">580 ₴</p>
+            <div class="basket-fields">
+                <div class="basket-field">
+                    <img class="img-goods1" src="./images/HoneyPhoto/Мед 2.png" alt="goods1">
+                    <div>
+                        <p class="goods-1-p-name">Мед Травневий 350 г (133114145)</p>
+                        <button class="goods-1-btn-price">X</button>
+                    </div>
+                    <div class="status-and-counter">
+                        <p class="goods-1-p-status">Є в наявності</p>
+                        <button class="button1goods1">-</button>
+                        <input class="input-count" type="text" value="1">
+                        <button class="button2goods1">+</button>
+                    </div>
+                    <div>
+                        <p class="price-sum-p">150 ₴</p>
+                    </div>
+                </div>
+                <div class="basket-field">
+                    <img class="img-goods1" src="./images/HoneyPhoto/Мед 3.png" alt="goods1">
+                    <div>
+                        <p class="goods-1-p-name">Мед Різнотрав’я 1000 г (133114146)</p>
+                        <button class="goods-2-btn-price">X</button>
+                    </div>
+                    <div class="status-and-counter">
+                        <p class="goods-2-p-status">Є в наявності</p>
+                        <button class="button1goods2">-</button>
+                        <input class="input-count" type="text" value="1">
+                        <button class="button2goods2">+</button>
+                    </div>
+                    <div>
+                        <p class="price-sum-p">430 ₴</p>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery-basket">
+                <div>
+                    <p class="p1-delivery-payment">Доставка Нова Пошта</p>
+                    <p class="p2-delivery-payment">від 60 ₴</p>
+                </div>
+                <div>
+                    <p class="p1-delivery-payment">До оплати без доставки:</p>
+                    <p class="p2-delivery-payment">580 ₴</p>
+                </div>
+                <div class="to-order">
+                    <button class="to-order-button">Оформити замовлення</button>
+                </div>
+            </div>
+            <div class="promocode">
+                <p class="p1-promocode">Ввести промокод</p>
+                <input class="promocode-inputs" type="text" placeholder="Промокод">
+                <button class="promocode-button">Застосувати</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
