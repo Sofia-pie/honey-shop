@@ -1,0 +1,241 @@
+body {
+	margin: 0;
+    font-family: 'Cormorant', sans-serif;
+}
+
+/* Селектори налаштування лого і контенту */
+
+.content {
+    margin-left: 720px;
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+.LogoS {
+    margin-left: 720px;
+    width: 190px;
+    height: 90px;
+}
+
+/* Кінець секції Селекторів налаштування лого і контенту */
+
+.form-contacts {
+    border: 1px solid #8A8A8A;
+    border-radius: 8px;
+    padding: 16px;
+    width: 320px;
+}
+
+.form-delivery {
+    border: 1px solid #8A8A8A;
+    border-radius: 8px;
+    padding: 16px;
+    width: 320px;
+}
+
+.form-payment {
+    border: 1px solid #8A8A8A;
+    border-radius: 8px;
+    padding: 16px;
+    width: 320px;
+}
+
+.form-inputs {
+    width: 320px;
+}
+
+.nv-logo {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+.p-1-delivery {
+    margin-left: 30px;
+}
+
+.p-2-delivery {
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.select-delivery {
+    width: 320px;
+}
+
+.text-area-comment {
+    width: 340px;
+    height: 250px;
+    margin-bottom: 64px;
+}
+
+.basket-form {
+    height: 720px;
+    width: 500px;
+    border: 1px solid #8A8A8A;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.basket-fields {
+    border: 1px solid #8A8A8A;
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.delivery-basket {
+    margin-top: 16px;
+    border: 1px solid #8A8A8A;
+    border-radius: 8px;
+    padding: 32px;
+    height: 72px;
+}
+
+.promocode {
+    margin-top: 16px;
+    border: 1px solid #8A8A8A;
+    border-radius: 8px;
+    padding: 32px;
+    height: 72px;
+}
+
+.p1-payment {
+    position: absolute;
+    font-weight: bold;
+}
+
+.p2-payment {
+    margin-left: 280px;
+    font-weight: bold;
+}
+
+.p1-delivery-payment {
+    margin: 0px;
+    position: absolute;
+}
+
+.p2-delivery-payment {
+    margin-top: 0px;
+    margin-left: 280px;
+    font-weight: bold;
+}
+
+.to-order-button {
+    height: 20px;
+    width: 320px;
+    border: none;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+.to-order-button:hover {
+    background-color: #A9A9A9;
+}
+
+.p1-promocode {
+    font-weight: bold;
+    margin: 0px;
+}
+
+.promocode-inputs {
+    margin-top: 8px;
+    width: 320px;
+}
+
+.promocode-button {
+    width: 330px;
+    margin-top: 8px;
+}
+
+/* Селектори корзини */
+
+.basket-field {
+    margin-top: 80px;
+}
+
+.goods-1-p-name {
+    position: absolute;
+}
+
+.goods-1-btn-price {
+    cursor: pointer;
+    border: none;
+    width: 20px;
+    margin-left: 380px;
+}
+
+.status-and-counter {
+    position: absolute;
+}
+
+.price-sum-p {
+    padding-left: 240px;
+}
+
+.goods-1-p-status {
+    margin-top: 32px;
+}
+
+.button1goods1 {
+    border: none;
+    cursor: pointer;
+    margin-left: 120px;
+}
+
+.button2goods1 {
+    border: none;
+    cursor: pointer;
+}
+
+.img-goods1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.goods-2-p-status {
+    margin-top: 32px;
+}
+
+.goods-2-btn-price {
+    cursor: pointer;
+    border: none;
+    width: 20px;
+    margin-left: 380px;
+}
+
+.button1goods2 {
+    border: none;
+    cursor: pointer;
+    margin-left: 120px;
+}
+
+.button2goods2 {
+    border: none;
+    cursor: pointer;
+}
+
+.img-goods2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.input-count {
+    margin-top: 8px;
+    width: 24px;
+}
+
+.basket-field p {
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+/* Кінець селекторів корзини */
