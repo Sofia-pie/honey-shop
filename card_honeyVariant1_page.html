@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/card_honeyVariant1_page_style.css">
+    <title>Карточка меду 1</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-section">
+            <div>
+                <img class="LogoS" src="./images/Logo/LogoS.png" alt="LogoS">
+            </div>
+            <div class="header-item headerButton">
+                <a href="">Головна</a>
+            </div>
+            <div class="header-item headerButton">
+                <a href="">Товар</a>
+            </div>
+            <div class="header-item headerButton">
+                <a href="">Блог</a>
+            </div>
+            <div class="header-item headerButton">
+                <a href="">Контакти</a>
+            </div>
+        </div>
+        <div class="header-section">
+            <div class="header-item headerButton">
+                <a href="">Корзина</a>
+            </div>
+            <div>
+                <img class="basket" src="./images/Photo/BasketLogo.png" alt="basket">
+            </div>
+            <div class="header-item headerButton">
+                <a href="">Увійти</a>
+            </div>
+            <div class="header-item headerButton">
+                <a href="">Реєстрація</a>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="wavepage">
+            <p>Головна сторінка > Каталог товару > Мед Травневий 350 г</p>
+        </div>
+        <div class="card-honey">
+            <h2 class="h2-card-honey">Мед Травневий 350 г</h2>
+            <div class="honey-content">
+                <img class="honey-card-img" src="./images/HoneyPhoto/Мед 2.png" alt="">
+                <p class="p1-honey-content">150 ₴</p>
+                <p class="p2-honey-content">Травневий мед - ціна роботи бджіл за весняні місяці. Травневий мед збирається з різних ранніх квітучих медоносів, відповідно він може мати різну кольорову гаму, але найчастіше це світлий мед. У свіжому стані - рідкий. Навесні при зборі пилку бджоли її недостатньо фільтрують, через це в травневому меді міститься велика кількість частинок пилку, які прискорюють його кристалізацію.</p>
+                <div class="status-and-counter">
+                    <p class="honey-p-status">Є в наявності</p>
+                    <button class="button1honey">-</button>
+                    <input class="input-count" type="text" value="1">
+                    <button class="button2honey">+</button>
+                </div>
+            </div>
+            <div class="description-form">
+                <div>
+                    <button class="description-button1">Опис</button>
+                    <button class="description-button2">Додаткова інформація</button>
+                </div>
+                <div class="description">
+                    <div>
+                        <p class="article-p">АРТИКУЛ</p>
+                        <p class="article-p-2">example-article</p>
+                    </div>
+                    <div>
+                        <p class="weight-p">ВАГА</p>
+                        <p class="weight-p2">example-weight</p>
+                    </div>
+                    <div>
+                        <p class="size-p">РОЗМІРИ</p>
+                        <p class="size-p2">example-size</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="logo-container">
+            <img class="logo" src="./images/Logo/LogoS.png" alt="LogoS">
+        </div>
+        <div class="nav">
+            <h3 class="heading">Меню</h3>
+    
+            <a [routerLink]="['/main-page']" class="nav-link">Головна</a>
+    
+    
+            <a [routerLink]="['/products']" class="nav-link">Товар</a>
+    
+    
+            <a [routerLink]="['/blog']" class="nav-link">Блог</a>
+    
+    
+            <a href="" class="nav-link">Контакти</a>
+        </div>
+        <div class="info">
+            <h3 class="heading">Контакти</h3>
+            <p>м. Ужгород, 20002, вул. Заньковецька
+                18, оф. 121</p>
+            <a href="tel:+380961991696">+380 (96) 199 16 96</a>
+        </div>
+    </footer>
+</body>
+</html>
