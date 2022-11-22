@@ -1,0 +1,182 @@
+body {
+	margin: 0;
+}
+
+/* Секція селекторів навігації */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+}
+
+.header-item {
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.header-item:hover {
+    background-color: #FF9900;
+    border-radius: 4px;
+}
+
+.LogoS {
+    width: 117px;
+    height: 50px;
+}
+
+.basket {
+    width: 30px;
+    height: 30px;
+}
+
+/* Кінець секції селекторів навігації */
+
+.wavepage p {
+    width: 640px;
+    height: 20px;
+    color: gray;
+}
+
+.content {
+    margin-left: 380px;
+}
+
+.card-honey {
+    width: 1280px;
+}
+
+.h2-card-honey {
+    font-family: 'Cormorant', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.honey-card-img {
+    width: 420px;
+    height: 420px;
+    position: absolute;
+}
+
+.p1-honey-content {
+    font-size: 24px;
+    margin-left: 530px;
+}
+
+.p2-honey-content {
+    font-size: 18px;
+    width: 460px;
+    margin-left: 530px;
+}
+
+.status-and-counter {
+    margin-top: 190px;
+    margin-left: 530px;
+}
+
+.honey-p-status {
+    color: #48a300;
+}
+
+.input-count {
+    width: 20px;
+}
+
+.button1honey {
+    border: none;
+    cursor: pointer;
+}
+
+.button2honey {
+    border: none;
+    cursor: pointer;
+}
+
+.description-button1 {
+    background-color: white;
+    border: 1px solid #8A8A8A;
+    cursor: pointer;
+    font-weight: bold;
+}
+.description-button2 {
+    background-color: grey;
+    border: 1px solid #8A8A8A;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.description-form {
+    margin-top: 32px;
+}
+
+.description {
+    border: 1px solid #8A8A8A;
+    padding: 16px;
+    font-family: 'Cormorant', sans-serif;
+    font-size: 18px;
+}
+
+/* Селектори footer */
+
+.footer {
+    background-color: #d1d1d1;
+    min-height: 200px;
+    margin-top: 30px;
+  
+    display: flex;
+    padding: 35px;
+    justify-content: center;
+    gap: 40px;
+}
+  
+.logo-container {
+    height: 78px;
+  }
+.logo {
+    height: 100%;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    border-bottom: 0.5px solid #afafaf;
+}
+  
+.heading {
+    font-size: 700;
+    font-size: 24px;
+    position: relative;
+}
+  
+.heading::after {
+    position: absolute;
+    width: 34px;
+    height: 3px;
+    content: "";
+    background-color: #afafaf;
+    border-radius: 10px;
+    top: 29px;
+    left: 0;
+}
+  
+.info a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}  
+
+/* Кінець селекторів footer */
