@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/admin_panel_users_style.css">
+    <title>Панель управління - Користувачі</title>
+</head>
+<body>
+    <header class="header">
+        <img class="admin-icon" src="./images/Icons/admin icon.png" alt="admin icon">
+        <label class="name-admin">System Administrator</label>
+        <img class="logout-icon" src="./images/Icons/logout icon.png" alt="logout icon">
+        <a class="exit" href="">Вийти</a>
+    </header>
+    <main class="main">
+        <div>
+            <label class="title-main">Користувачі ></label>
+            <img class="home-icon" src="./images/Icons/home icon.png" alt="home icon">
+        </div>
+        <div class="counters">
+            <div class="users-all">
+                <p class="position-users">Користувачів взагалом</p>
+                <select class="latest-date" name="latest-date">
+                    <option value="1">30 днів</option>
+                    <option value="1">14 днів</option>
+                    <option value="1">7 днів</option>
+                    <option value="1">24 години</option>
+                </select>
+                <div class="background-users">
+                    <img class="position-users" src="./images/Icons/people icon.png" alt="people icon">
+                    <label class="count-users">10</label>
+                </div>
+            </div>
+            <div class="new-users">
+                <p class="position-new">Нових користувачів</p>
+                <select class="latest-date" name="latest-date">
+                    <option value="1">30 днів</option>
+                    <option value="1">14 днів</option>
+                    <option value="1">7 днів</option>
+                    <option value="1">24 години</option>
+                </select>
+                <div class="background-new">
+                    <img class="position-new" src="./images/Icons/people icon.png" alt="people icon">
+                    <label class="count-new">10</label>
+                </div>
+            </div>
+            <div class="active-users">
+                <p class="position-active">Активні користувачі</p>
+                <div class="background-active">
+                    <img class="position-active" src="./images/Icons/people icon.png" alt="people icon">
+                    <label class="count-active">0</label>
+                </div>
+            </div>
+        </div>
+        <img src="./images/Icons/loupe icon.png" alt="loupe icon">
+        <input class="input-users-search" type="text" placeholder="Пошук">
+        <div class="users-table">
+            <table border="1">
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>ID</th>
+                    <th>Ім'я</th>
+                    <th>Пошта</th>
+                    <th><img src="./images/Icons/eyeoff icon.png" alt="eyeoff icon"></th>
+                    <th><img src="./images/Icons/edit small icon.png" alt="edit small icon"></th>
+                    <th><img src="./images/Icons/trashbasket icon.png" alt="trashbasket icon"></th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td>Test Name</td>
+                    <td>example@example.com</td>
+                    <td><button><img src="./images/Icons/eyeoff icon.png" alt="eyeoff icon"></button></td>
+                    <td><button><img src="./images/Icons/edit small icon.png" alt="edit small icon"></button></td>
+                    <td><button><img src="./images/Icons/trashbasket icon.png" alt="trashbasket icon"></button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>2</td>
+                    <td>Test Name</td>
+                    <td>example@example.com</td>
+                    <td><button><img src="./images/Icons/eyeoff icon.png" alt="eyeoff icon"></button></td>
+                    <td><button><img src="./images/Icons/edit small icon.png" alt="edit small icon"></button></td>
+                    <td><button><img src="./images/Icons/trashbasket icon.png" alt="trashbasket icon"></button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>3</td>
+                    <td>Test Name</td>
+                    <td>example@example.com</td>
+                    <td><button><img src="./images/Icons/eyeoff icon.png" alt="eyeoff icon"></button></td>
+                    <td><button><img src="./images/Icons/edit small icon.png" alt="edit small icon"></button></td>
+                    <td><button><img src="./images/Icons/trashbasket icon.png" alt="trashbasket icon"></button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>4</td>
+                    <td>Test Name</td>
+                    <td>example@example.com</td>
+                    <td><button><img src="./images/Icons/eyeoff icon.png" alt="eyeoff icon"></button></td>
+                    <td><button><img src="./images/Icons/edit small icon.png" alt="edit small icon"></button></td>
+                    <td><button><img src="./images/Icons/trashbasket icon.png" alt="trashbasket icon"></button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>5</td>
+                    <td>Test Name</td>
+                    <td>example@example.com</td>
+                    <td><button><img src="./images/Icons/eyeoff icon.png" alt="eyeoff icon"></button></td>
+                    <td><button><img src="./images/Icons/edit small icon.png" alt="edit small icon"></button></td>
+                    <td><button><img src="./images/Icons/trashbasket icon.png" alt="trashbasket icon"></button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>6</td>
+                    <td>Test Name</td>
+                    <td>example@example.com</td>
+                    <td><button><img src="./images/Icons/eyeoff icon.png" alt="eyeoff icon"></button></td>
+                    <td><button><img src="./images/Icons/edit small icon.png" alt="edit small icon"></button></td>
+                    <td><button><img src="./images/Icons/trashbasket icon.png" alt="trashbasket icon"></button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>7</td>
+                    <td>Test Name</td>
+                    <td>example@example.com</td>
+                    <td><button><img src="./images/Icons/eyeoff icon.png" alt="eyeoff icon"></button></td>
+                    <td><button><img src="./images/Icons/edit small icon.png" alt="edit small icon"></button></td>
+                    <td><button><img src="./images/Icons/trashbasket icon.png" alt="trashbasket icon"></button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>8</td>
+                    <td>Test Name</td>
+                    <td>example@example.com</td>
+                    <td><button><img src="./images/Icons/eyeoff icon.png" alt="eyeoff icon"></button></td>
+                    <td><button><img src="./images/Icons/edit small icon.png" alt="edit small icon"></button></td>
+                    <td><button><img src="./images/Icons/trashbasket icon.png" alt="trashbasket icon"></button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>9</td>
+                    <td>Test Name</td>
+                    <td>example@example.com</td>
+                    <td><button><img src="./images/Icons/eyeoff icon.png" alt="eyeoff icon"></button></td>
+                    <td><button><img src="./images/Icons/edit small icon.png" alt="edit small icon"></button></td>
+                    <td><button><img src="./images/Icons/trashbasket icon.png" alt="trashbasket icon"></button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>10</td>
+                    <td>Test Name</td>
+                    <td>example@example.com</td>
+                    <td><button><img src="./images/Icons/eyeoff icon.png" alt="eyeoff icon"></button></td>
+                    <td><button><img src="./images/Icons/edit small icon.png" alt="edit small icon"></button></td>
+                    <td><button><img src="./images/Icons/trashbasket icon.png" alt="trashbasket icon"></button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <div class="left-content">
+        <div class="left-content-position">
+            <img class="LogoS" src="./images/Logo/LogoS.png" alt="LogoS">
+            <div class="button-section1">
+                <img class="img-panel" src="./images/Icons/home icon.png" alt="home icon">
+                <br>
+                <a class="a-panel" href="">Панель управління</a>
+            </div>
+            <div class="button-section2">
+                <img class="img-goods" src="./images/Icons/cart icon.png" alt="cart icon">
+                <br>
+                <a class="a-goods" href="">Товар</a>
+            </div>
+            <div class="button-section3">
+                <img class="img-orders" src="./images/Icons/card icon.png" alt="card icon">
+                <br>
+                <a class="a-orders" href="">Закази</a>
+            </div>
+            <div class="button-section4">
+                <img class="img-users" src="./images/Icons/card icon.png" alt="card id icon">
+                <br>
+                <a class="a-users" href="">Користувачі</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

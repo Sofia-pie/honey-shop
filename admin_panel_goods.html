@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/admin_panel_goods_style.css">
+    <title>Панель управління - Товар</title>
+</head>
+<body>
+    <header class="header">
+        <img class="admin-icon" src="./images/Icons/admin icon.png" alt="admin icon">
+        <label class="name-admin">System Administrator</label>
+        <img class="logout-icon" src="./images/Icons/logout icon.png" alt="logout icon">
+        <a class="exit" href="">Вийти</a>
+    </header>
+    <main class="main">
+        <div>
+            <label class="title-main">Товар > </label>
+            <img class="home-icon" src="./images/Icons/home icon.png" alt="home icon">
+        </div>
+        <div class="goods-table">
+            <div class="goods">
+                <label>Товар</label>
+                <button class="button-add-goods"><img src="./images/Icons/+.png" alt="+"></button>
+                <button class="button-del-goods"><img src="./images/Icons/trashbasket icon.png" alt="trashbasket icon"></button>
+                <button class="button-change-goods"><img src="./images/Icons/edit small icon.png" alt="edit small icon"></button>
+                <table border="1">
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>Фото</th>
+                        <th>Назва</th>
+                        <th>Артикул</th>
+                        <th>Посилання</th>
+                        <th>Кількість</th>
+                        <th>Ціна</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><img src="./images/HoneyPhoto/Мед 1.png" alt="Мед 1"></td>
+                        <td>Мед Липовий 500 г</td>
+                        <td>133114144</td>
+                        <td><a href="">🔗</a></td>
+                        <td>100</td>
+                        <td>200 ₴</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><img src="./images/HoneyPhoto/Мед 2.png" alt="Мед 2"></td>
+                        <td>Мед Травневий 500 г</td>
+                        <td>133114145</td>
+                        <td><a href="">🔗</a></td>
+                        <td>100</td>
+                        <td>150 ₴</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><img src="./images/HoneyPhoto/Мед 3.png" alt="Мед 3"></td>
+                        <td>Мед Різнотрав'я 500 г</td>
+                        <td>133114146</td>
+                        <td><a href="">🔗</a></td>
+                        <td>100</td>
+                        <td>430 ₴</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><img src="./images/HoneyPhoto/Мед 4.png" alt="Мед 4"></td>
+                        <td>Мед Гречаний 500 г</td>
+                        <td>133114147</td>
+                        <td><a href="">🔗</a></td>
+                        <td>100</td>
+                        <td>280 ₴</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="filter-goods">
+                <div class="border-filter">
+                    <p>Фільтр</p>
+                </div>
+                <div class="article-goods">
+                    <p>Артикул товару</p>
+                    <input type="text">
+                </div>
+                <div class="name-goods">
+                    <p>Назва товару</p>
+                    <input type="text">
+                </div>
+                <div class="amount-goods">
+                    <p>Кількість</p>
+                    <input type="text">
+                </div>
+                <div class="price-goods">
+                    Ціна товару
+                    <input type="text"> - <input type="text">
+                    <button class="button-price-ok">OK</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="left-content">
+        <div class="left-content-position">
+            <img class="LogoS" src="./images/Logo/LogoS.png" alt="LogoS">
+            <div class="button-section1">
+                <img class="img-panel" src="./images/Icons/home icon.png" alt="home icon">
+                <br>
+                <a class="a-panel" href="">Панель управління</a>
+            </div>
+            <div class="button-section2">
+                <img class="img-goods" src="./images/Icons/cart icon.png" alt="cart icon">
+                <br>
+                <a class="a-goods" href="">Товар</a>
+            </div>
+            <div class="button-section3">
+                <img class="img-orders" src="./images/Icons/card icon.png" alt="card icon">
+                <br>
+                <a class="a-orders" href="">Закази</a>
+            </div>
+            <div class="button-section4">
+                <img class="img-users" src="./images/Icons/card icon.png" alt="card id icon">
+                <br>
+                <a class="a-users" href="">Користувачі</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
