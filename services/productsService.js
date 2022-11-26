@@ -1,7 +1,10 @@
 const { Product } = require('../models/Product');
-
-const saveProduct = async (payload) => {
-  const product = new Product(payload);
+var fs = require('fs');
+var path = require('path');
+const saveProduct = async (payload, img, url) => {
+  const obj = { ...payload, img: url + '/uploads/' + img.filename };
+  console.log(obj);
+  const product = new Product(obj);
   return await product.save();
 };
 

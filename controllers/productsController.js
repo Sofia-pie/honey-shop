@@ -12,9 +12,9 @@ const getProducts = async (req, res, next) => {
 };
 
 const addProduct = async (req, res, next) => {
-  const payload = req.body;
+  const url = req.protocol + '://' + req.get('host');
   try {
-    await saveProduct(payload);
+    await saveProduct(req.body, req.file, url);
   } catch (err) {
     return next(err);
   }
@@ -42,14 +42,13 @@ const editProduct = async (req, res, next) => {
   }
 };
 
-const deleteProduct = (req, res, next) => {
-  return Product.findByIdAndDelete(res.params.id)
-    .then(() => {
-      res.status(200).json('Deleted');
-    })
-    .catch((err) => {
-      next(err);
-    });
+const deleteProduct = async (req, res, next) => {
+  try {
+    await Product.findByIdAndDelete(req.params.id);
+    res.status(200).json('Deleted');
+  } catch (err) {
+    next(err);
+  }
 };
 module.exports = {
   getProducts,

@@ -1,6 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const fs = require('fs');
+var bodyParser = require('body-parser');
 require('dotenv').config();
 
 const app = express();
@@ -27,11 +28,10 @@ const { usersRouter } = require('./routers/usersRouter');
 const { productsRouter } = require('./routers/productsRouter');
 const { blogsRouter } = require('./routers/blogsRouter');
 
-app.use(
-  morgan('common', {
-    stream: fs.createWriteStream('./access.log', { flags: 'a' }),
-  })
-);
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.use('/uploads', express.static('uploads'));
 
 const cors = require('cors');
 
@@ -56,8 +56,7 @@ const start = async () => {
 start();
 
 function errorHandler(err, req, res, next) {
-  res.status(500);
-  res.render('error', { error: err });
+  res.status(500).json(err.message);
 }
 
 // ERROR HANDLER

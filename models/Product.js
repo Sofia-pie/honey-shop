@@ -19,6 +19,10 @@ const productSchema = new Schema(
     additional: String,
     amount: Number,
     category: String,
+    articul: String,
+    weight: Number,
+    size: Number,
+    img: String,
   },
   { timestamps: { createdAt: true } }
 );
