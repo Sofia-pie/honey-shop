@@ -1,0 +1,40 @@
+<div class="header">
+	<div class="header-section">
+		<div>
+			<img class="LogoS" src="assets\images\Logo\LogoS.png" alt="LogoS">
+		</div>
+		<div class="header-item headerButton">
+			<a [routerLink]="['/main-page']">Головна</a>
+		</div>
+		<div class="header-item headerButton">
+			<a [routerLink]="['/products']">Товар</a>
+		</div>
+		<div class="header-item headerButton">
+			<a [routerLink]="['/blog']">Блог</a>
+		</div>
+		<!-- <div class="header-item headerButton">
+			<a href="">Контакти</a>
+		</div> -->
+		<div class="header-item headerButton" *ngIf="this.authService.isLoggedIn && this.authService.isAdmin">
+			<a [routerLink]="['/dashboard']">Адмін-панель</a>
+		</div>
+
+	</div>
+	<div class="header-section">
+		<div class="header-item headerButton">
+			<a [routerLink]="['/cart']">Корзина</a>
+		</div>
+		<div>
+			<img class="basket" src="assets\images\Photo\BasketLogo.png" alt="basket">
+		</div>
+		<div class="header-item headerButton" *ngIf="!this.authService.isLoggedIn">
+			<a [routerLink]="['/log-in']">Увійти</a>
+		</div>
+		<div class="header-item headerButton" *ngIf="!this.authService.isLoggedIn">
+			<a [routerLink]="['/sign-up']">Реєстрація</a>
+		</div>
+		<div class="header-item headerButton" *ngIf="this.authService.isLoggedIn">
+			<a (click)="logout()">Вийти</a>
+		</div>
+	</div>
+</div>

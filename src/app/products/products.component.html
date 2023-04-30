@@ -1,0 +1,74 @@
+<div class="container">
+	<div class="img">
+		<img src="assets/images/Background/Background 1440 x 650.png">
+	</div>
+	<div class="background">
+		<div class="wavepage">
+			<p><a [routerLink]="['/main-page']">Головна сторінка</a> > Каталог товару</p>
+		</div>
+		<div class="sort">
+			<select name="sort-list">
+				<option value="1">За замовчуванням</option>
+				<option value="2">За ціною: від нижчої до вищої</option>
+				<option value="3">За ціною: від вищої до нижчої</option>
+			</select>
+		</div>
+		<div class="goods-section">
+			<div class="filter">
+				<div class="search">
+					<input type="text" class="filter" placeholder="Пошук" (keyup)="filter($event)">
+				</div>
+				<div class="price">
+					<p>Ціна</p>
+					<input class="input-price" type="">
+					━
+					<input class="input-price" type="">
+					<button>OK</button>
+				</div>
+				<div class="honeytype">
+					<p>Мед</p>
+					<div>
+						<input type="checkbox" name="typehoney1">
+						<label for="typehoney1">Травневий</label>
+					</div>
+					<div>
+						<input type="checkbox" name="typehoney2">
+						<label for="typehoney2">Різнотрав’я</label>
+					</div>
+					<div>
+						<input type="checkbox" name="typehoney3">
+						<label for="typehoney3">Липовий</label>
+					</div>
+					<div>
+						<input type="checkbox" name="typehoney4">
+						<label for="typehoney4">Гречаний</label>
+					</div>
+					<div class="status-goods">
+						<p>Статус товару</p>
+						<div>
+							<input type="checkbox" name="typestatusgoods1">
+							<label for="typestatusgoods1">Є в наявності</label>
+						</div>
+						<div>
+							<input type="checkbox" name="typestatusgoods2">
+							<label for="typestatusgoods2">Немає в наявності</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="goods-catalog">
+				<app-product-card *ngFor="let product of products  | search: searchValue" [product]='product'
+					(buyProduct)="buy($event)">
+				</app-product-card>
+			</div>
+
+		</div>
+		<div class="button-page">
+			<button class="button-page-now" href="">1</button>
+			<button class="button-page">2</button>
+			<button class="button-page">></button>
+		</div>
+	</div>
+
+
+</div>

@@ -1,0 +1,82 @@
+.main-img {
+  height: 70vh;
+}
+.main-img .img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.blok-info {
+  padding: 10px 10vw;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 1fr;
+}
+
+.blok-info img {
+  width: 297px;
+  height: 284px;
+}
+
+.p-info {
+  font-weight: bold;
+}
+
+.goods-s {
+  background-image: url("../../assets/images/Background/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h-goods {
+  text-align: center;
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 48px;
+}
+.goods {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 10px 10vw;
+  max-width: 1440px;
+}
+.button {
+  border: none;
+  padding: 5px 24px;
+  background: #d9d9d9;
+  border-radius: 20px;
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+  margin-top: 50px;
+}
+
+.blog-window {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h-blog {
+  text-align: center;
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.blog {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}

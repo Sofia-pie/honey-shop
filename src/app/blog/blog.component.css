@@ -1,0 +1,30 @@
+.img img {
+  width: 1440px;
+  height: 480px;
+}
+
+.wavepage p {
+  width: 283px;
+  height: 19px;
+  margin-left: 380px;
+  color: gray;
+}
+
+.wavepage a {
+  text-decoration: none;
+  color: gray;
+}
+
+/* Селектори блогу */
+
+.blog-section {
+  margin-left: 380px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.blog-section a {
+  text-decoration: underline;
+}

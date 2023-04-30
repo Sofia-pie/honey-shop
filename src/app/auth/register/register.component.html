@@ -1,0 +1,37 @@
+<main>
+	<form class="register-form-container" [formGroup]="signupForm" (ngSubmit)="registerUser()">
+		<h1 class="form-title">
+			Реєстрація
+		</h1>
+		<div class="form-fields">
+			<div class="form-field">
+				<label class="labels">Ім'я та Прізвище</label> <br>
+				<input class="form-inputs" type="text" formControlName="name" required>
+			</div>
+			<div class="form-field">
+				<label class="labels">Номер телефону</label> <br>
+				<input class="form-inputs" class="form-inputs" type="text" formControlName="phone" required>
+			</div>
+			<div class="form-field">
+				<label class="labels">Ел. пошта</label> <br>
+				<input class="form-inputs" type="email" formControlName="email" required>
+			</div>
+			<div class="form-field">
+				<label class="labels">Пароль</label> <br>
+				<input class="form-inputs" type="password" formControlName="password" required>
+			</div>
+		</div>
+		<!-- <div class="form-check-reminder">
+			<input type="checkbox"><label class="labels reg">Запам'ятати мене</label>
+			<a class="a-reminder labels reminder" href="">Нагадати пароль</a>
+		</div> -->
+		<div class="form-buttons">
+			<div class="button-reg">
+				<button class="button buttons" type="submit">Зареєструватися</button>
+			</div>
+			<div class="button-reg-now">
+				<a class="a-reminder buttons now" [routerLink]="['/log-in']">Я вже зареєстрований</a>
+			</div>
+		</div>
+	</form>
+</main>
