@@ -8,9 +8,7 @@ const app = express();
 const mongoose = require('mongoose');
 
 mongoose
-  .connect(
-    'mongodb+srv://Sofiia:1gfhjkm1@cluster0.zpdxexi.mongodb.net/shop?retryWrites=true&w=majority'
-  )
+  .connect(process.env.DB)
   .then(() => {
     console.log('Successfully connected to database');
   })
